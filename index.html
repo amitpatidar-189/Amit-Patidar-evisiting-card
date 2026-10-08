@@ -29,6 +29,23 @@ body{margin:0;min-height:100vh;color:var(--ink);font-family:var(--font);backgrou
 .cta{display:flex;align-items:center;justify-content:center;gap:9px;background:var(--navy);color:#fff;text-decoration:none;border-radius:16px;padding:15px;font-size:13px;font-weight:800;box-shadow:0 14px 30px rgba(36,30,99,.22);transition:.18s}.cta:hover{transform:translateY(-2px)}.footer{text-align:center;color:#9A9AA3;font-size:10px;padding-top:3px}.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);opacity:0;background:#17133F;color:#fff;padding:10px 15px;border-radius:11px;font-size:11px;font-weight:700;transition:.25s;pointer-events:none}.toast.show{opacity:1;transform:translate(-50%,0)}
 @media(max-width:520px){.wrap{padding-top:20px}.card{aspect-ratio:.73/1}.logo{left:9%;top:8%;width:65%;max-width:none;max-height:105px}.tap{right:9%;top:8%}.identity{left:9%;right:9%;bottom:17%}.name{font-size:27px}.accent{right:9%;bottom:29%}.back-content{grid-template-columns:1fr;grid-template-rows:auto 1fr auto;padding:9%}.back-logo{width:145px}.qrbox{justify-self:start;display:flex;align-items:center;gap:10px;text-align:left}.qr{width:84px;height:84px}.actions{grid-template-columns:repeat(3,1fr);row-gap:9px}}
 @media(prefers-reduced-motion:reduce){.inner,.action,.cta{transition:none}}
+ .links a{white-space:nowrap}
+
+@media(max-width:520px){
+.front .name,.front .role,.front .company,.front .tap,.front .accent span,.back h2,.back .sub,.links a,.topline strong,.topline span{white-space:nowrap}
+.front .name{font-size:clamp(23px,7vw,29px);line-height:1.1}
+.front .role{font-size:13px;line-height:1.2}
+.front .company{font-size:10.5px;line-height:1.25}
+.front .identity{max-width:calc(100% - 18%)}
+.front .accent{max-width:40%}
+.front .accent span{font-size:8px;letter-spacing:.07em}
+.back .links{width:100%}
+.back .links a{font-size:11px;min-width:0}
+.back .links a .icon{flex:0 0 26px}
+.topline{gap:10px}
+.topline span{font-size:9px;letter-spacing:.05em}
+.actions .action{min-width:0;font-size:9px}
+}
 </style>
 </head>
 <body>
